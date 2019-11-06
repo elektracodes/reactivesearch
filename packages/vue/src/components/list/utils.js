@@ -40,8 +40,7 @@ const getAggsQuery = (query, props) => {
 				nested: {
 					path: props.nestedField,
 				},
-				aggs: clonedQuery.aggs,
-				size: clonedQuery.size,
+				aggs: clonedQuery.aggs
 			},
 		};
 	}
@@ -85,8 +84,7 @@ const getCompositeAggsQuery = (query, props, after) => {
 				nested: {
 					path: props.nestedField,
 				},
-				aggs: clonedQuery.aggs,
-				size: clonedQuery.size,
+				aggs: clonedQuery.aggs
 			},
 		};
 	}
